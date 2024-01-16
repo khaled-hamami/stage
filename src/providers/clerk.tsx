@@ -12,7 +12,7 @@ export default function ClerkAuthProvider({ children }: children) {
 
   return (
     <ClerkProvider
-      appearance={{ baseTheme: theme === "dark" ? dark : undefined }}
+      appearance={{ baseTheme: theme === "light" ? undefined : dark }}
     >
       {children}
     </ClerkProvider>
