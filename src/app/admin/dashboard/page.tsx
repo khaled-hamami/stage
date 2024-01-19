@@ -44,9 +44,9 @@ export default async function AdminDashboard(params: { searchParams: { search?: 
                 </div>
                 <Badge
                   variant={user.publicMetadata.role === "admin" ? "default" : "outline"}
-                  className={`gmt-2 max-w-xl text-base font-bold `}
+                  className="gmt-2 max-w-xl text-base font-bold  mt-2"
                 >
-                  {user.publicMetadata.role as string}
+                  {user.publicMetadata.role === "admin" ? "Admin" : "User"}
                 </Badge>
 
                 <div className="mt-5">

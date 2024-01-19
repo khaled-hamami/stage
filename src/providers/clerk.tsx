@@ -11,9 +11,7 @@ export default function ClerkAuthProvider({ children }: children) {
   const { theme } = useTheme()
 
   return (
-    <ClerkProvider
-      appearance={{ baseTheme: theme === "light" ? undefined : dark }}
-    >
+    <ClerkProvider appearance={{ baseTheme: theme === "light" ? undefined : dark }}>
       {children}
     </ClerkProvider>
   )
